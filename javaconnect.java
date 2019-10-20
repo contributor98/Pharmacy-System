@@ -17,9 +17,10 @@ public class javaconnect {
     public static Connection ConnecrDb(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Shiva Reddy\\Documents\\NetBeansProjects\\Library Management System\\mydatabase.sqlite");
+           // Connection con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Shiva Reddy\\Documents\\NetBeansProjects\\Library Management System\\mydatabase.sqlite");
+                      Connection con=DriverManager.getConnection("jdbc:sqlite:///Provide the database url here i.e online url of database to run project data");
                     return con;
-                    
+          
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
             return null;
